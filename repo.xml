@@ -1,14 +1,19 @@
 <repo>
 	<footerlinks>
 		<link>
-			<name>Follow me on Twitter</name>
-			<url>https://twitter.com/reposi3</url>
+			<name>@ty_iOS</name>
+			<url>http://twitter.com/ty_ios</url>
 			<iconclass>fa fa-twitter</iconclass>
 		</link>
 		<link>
-			<name>I want this depiction template</name>
-			<url>https://github.com/supermamon/Reposi3/</url>
-			<iconclass>fa fa-thumbs-up</iconclass>
+			<name>/r/ty_ph</name>
+            <url>http://reddit.com/u/ty_ph</url>
+			<iconclass>fa fa-reddit</iconclass>
 		</link>
+        <link>
+            <name>tyiOS</name>
+            <url>http://paypal.me/tyiOS</url>
+            <iconclass>fa fa-paypal</iconclass>
+        </link>
 	</footerlinks>
 </repo>

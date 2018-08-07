@@ -24,14 +24,4 @@
 			<image>cydia.jpg</image>
 		</screenshot>		
 	</screenshots>
-	<changelog>
-		<change>Initial release.</change>
-	</changelog>
-	<links>
-		<link>
-			<name>/u/ty_ph</name>
-			<url>https://www.reddit.com/u/ty_ph</url>
-			<iconclass>fa fa-reddit</iconclass>
-		</link>
-	</links>
 </package>
