@@ -10,7 +10,7 @@
 	<dependencies>
 		<package>Anemone</package>
 	</dependencies>
-	<shortDescription>a colorful glyph theme for Anemone.</shortDescription>
+	<shortDescription>colorful glyphs for anemone.</shortDescription>
 	<screenshots>
 		<screenshot>
 			<description>This is a description for screenshot 1. It's Cydia!</description>
