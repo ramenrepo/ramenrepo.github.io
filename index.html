@@ -3,31 +3,108 @@
 <head>
   <title>Ramen Repo</title>
   <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="depictions/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="depictions/js/data-loader-engine.js"></script>
+  
 </head>
 <body>
 
-<div class="container">
-	<h1>🍜 Ramen Repo</h1>
-</div>
-
-<div class="container">
-	<div class="well">
-		<p>A repository by <span class="text-primary"><a href="http://www.reddit.com/u/ty_ph">/u/ty_ph</a>.</span></b></p>
-		<a class="btn btn-sm btn-default" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://supermamon.github.io/Reposi3/">Add to Cydia</a>
+	<div id="packageHeader" class="container">
+		<div class="jumbotron">
+			<h1>Ramen Repo 🍜 </h1>
+				<p>a repository by <span class="text-primary"><a href="http://www.reddit.com/u/ty_ph" class="purp">ty_ph</a>. </span></b><a class="btn btn-sm btn-default" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://supermamon.github.io/Reposi3/">+ Add to Cydia</a></p>
+				
+		</div>		
 	</div>
+	
+<div class="container">
 
 	<h3 id="wells" class="page-header">Packages</h3>
 	<div class="panel panel-default">
-	  <div class="panel-heading">⚡️ Limelight</div>
+	  <div class="panel-heading">✳️ Limelight</div>
 	  <div class="panel-body">
-	  	A colourful glyph theme for Anemone.<br /><br />
+	  	a colorful glyph theme for Anemone.<br /><br />
 		<a class="btn btn-xs btn-default" href="depictions/?p=com.ramenrepo.limelight">More info</a>
 	  </div>
 	</div>
-</div>
+
+	<script type="text/javascript">
+	   function setAnchorTargets() {
+		 // if on Cydia, set link targets to _blank
+		 if (navigator.userAgent.search(/Cydia/) != -1) {
+		   $("a").each(function() {
+			 $(this).attr("target","_blank");
+		   });
+		 }
+	   }
+
+		var repoContents =  {
+			"#repoFooterLinks" :
+				{"type":"custom"
+					,"source":"repo>footerlinks>link"
+					,"render":function(element,source) {
+						$.each(source, function(index,data) {
+							var a = $("<a class='link-item list-group-item'>");
+							a.attr("href",$(data).find('url').text());
+							if ($(data).find('iconclass')) {
+								var i =  $("<span>")
+								i.attr("class",$(data).find('iconclass').text());
+								console.log(i);
+								$(a).append(i);
+							}
+							$(a).append($(data).find('name').text());
+							$(element).append(a);
+						}); //each
+					} //render
+				}
+		}
+		$( document ).ready(function() {
+			$.ajax({type: "GET", dataType: "xml",url : ("../repo.xml"),cache: false,
+				success : function(xml){
+						  data_loader_engine(repoContents,xml);
+				  setAnchorTargets();
+					  },
+				error: function() {
+				  $("#contactInfo").hide();
+				  setAnchorTargets();
+				}
+			}); //ajax
+
+
+		}); // ready
+
+	</script>
+	
+	
+
+	<h3 id="wells" class="page-header">Social</h3>
+	</div>
+
+	<div id="contactInfo">
+		<div class="container">
+			<ul class="list-group" id="repoFooterLinks">
+			</ul>
+		<p class="light">repository template - <a href="https://github.com/supermamon/Reposi3" class="purp">Reposi3</a> by <a href="https://github.com/supermamon" class="purp">supermamon</a></p>
+		<br>
+		</div>
+		</div>
+	
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

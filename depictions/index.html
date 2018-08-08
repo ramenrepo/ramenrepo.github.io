@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Limelight</title>
+  <title>Ramen Repo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,11 +13,22 @@
   <script type="text/javascript" src="js/ios_version_check.js"></script>
   <style>
 	@media (max-width: 767px) {
-		body{background:#efeff4!important;margin:0;padding:0;border:0;outline:0;box-sizing:border-box}
+	body{
+		background:#fff!important;
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+		box-sizing:border-box
 	}
-	.jumbotron-bg {
-		background: green
+
+	.row li {
+		width: 33.3%;
+		float: left;
 	}
+	
+}
+	
   </style>
   <script type="text/javascript">
 
@@ -161,7 +172,7 @@
 		<div class="jumbotron">
 			<h1 id="packageName"></h1>
 			<p id="packageShortDesc"></p>
-		</div>
+		</div>		
 	</div>
 
 	<div class="container">
@@ -169,15 +180,9 @@
 	</div>
 
 	<div class="container">
-		<h5>DESCRIPTION</h5>
+		<h5>SCREENSHOTS</h5>
 		<ul id="descriptionList" class="list-group">
 			<li id="screenshotsLink" />
-		</ul>
-	</div>
-
-	<div class="container" id="dependenciesContainer">
-		<h5>DEPENDENCIES</h5>
-		<ul id="dependencyList" class="list-group">
 		</ul>
 	</div>
 
@@ -239,7 +244,7 @@
 
 <div id="contactInfo">
 	<div class="container">
-		<h5>LINKS</h5>
+		<h5>SOCIAL</h5>
 		<ul class="list-group" id="repoFooterLinks">
 		</ul>
 	</div>

@@ -6,13 +6,33 @@
     list-style-type: none;
     padding: 17px 15px;
     display: block;
-    color: #337ab7 !important;
+    color: #111 !important;
     text-align: left;
+}
+
+a {
+	color: #111;
+}
+
+.purp {
+	color: #664dff !important;
+}
+
+.light {
+	color: #696969 !important;
+}
+
+.jumbotron {
+	background-color: #fff;
+	padding-bottom: 5px;
+	padding-top: 20px;
+	padding-left: 0px !important;;
+	text-align: left;
 }
 
 .link-item:hover {
     border: 1px solid #ddd;
-    background-color: #f5f5f5;
+    background-color: #111;
 }
 
 html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
@@ -20,7 +40,7 @@ html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
 }
 
 html.can-touch .link-item:active{ /* disable hover effect when input is touch */
-    background-color: #f5f5f5;
+    background-color: #111;
 }
 
 .fa {
