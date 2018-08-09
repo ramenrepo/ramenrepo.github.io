@@ -1,22 +1,25 @@
 <package>
-	<id>com.ramenrepo.limelight</id>
-	<name>Limelight</name>
-	<version>1.0</version>
+    <id>com.ramenrepo.limelight</id>
+    <name>Limelight</name>
+    <version>1.0</version>
+    <compatibility>
+        <firmware>
+            <miniOS>9.0</miniOS>
+            <maxiOS>12.0</maxiOS>
+            <otherVersions>unconfirmed</otherVersions>
+        </firmware>
+    </compatibility>
+    <dependencies>Anemone</dependencies>
+    <descriptionlist>
+        <description>colorful glyphs for anemone</description>
+    </descriptionlist>
     <screenshots>
-        <image>cydia.jpg</image>
+        <screenshot>
+            <image>limelight-sample.png</image>
+        </screenshot>
     </screenshots>
-	<compatibility>
-		<firmware>
-			<miniOS>9.0</miniOS>
-		</firmware>
-	</compatibility>
-	<dependencies>
-		<package>Anemone</package>
-	</dependencies>
-	<shortDescription>colorful glyphs for anemone</shortDescription>
-	<screenshots>
-		<screenshot>
-			<image>limelight-sample.png</image>
-		</screenshot>
-	</screenshots>
+    <changelog>
+        <change>Initial release</change>
+    </changelog>
+    <links></links>
 </package>
