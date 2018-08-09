@@ -11,9 +11,14 @@
 			<iconclass>fa fa-reddit</iconclass>
 		</link>
         <link>
-            <name>Buy me a coffee 😁</name>
+            <name>Paypal</name>
             <url>http://paypal.me/tyiOS</url>
             <iconclass>fa fa-paypal</iconclass>
+        </link>
+        <link>
+            <name>Bitcoin</name>
+            <url>https://www.blockchain.com/btc/address/14kfN42H8qr47VcrtRH4CRHh6CmDWk6RY5</url>
+            <iconclass>fa fa-btc</iconclass>
         </link>
 	</footerlinks>
 </repo>
