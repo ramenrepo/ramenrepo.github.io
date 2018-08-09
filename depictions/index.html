@@ -43,9 +43,13 @@
 				console.log($(source).size());
 					$.each(source, function(index,data) {
 						var th = $("<div class='thumbnail'>");
-						th.append($("<img>")
-							.attr("src",bundleid+'/screenshots/'+$(data).find('image').text())
-						)
+						var imgsrc = bundleid+'/screenshots/'+$(data).find('image').text()
+						var lk = $("<a class='thumb'>").attr("href",imgsrc);
+// 						lk.append($("<img>").attr("src",bundleid+'/screenshots/'+$(data).find('image').text()));
+						var imgblock = $("<img>").attr("src", imgsrc);
+// 						$( "<p>Test</p>" ).appendTo( ".thumb" );
+						lk.append(imgblock);
+						th.append(lk)
 						$(element).append(th);
 					});
 					

@@ -94,6 +94,7 @@ html.can-touch .link-item:active{ /* disable hover effect when input is touch */
 	padding: 0px !important;
 	border: 0px !important;
 	height: 200px !important;
+	box-shadow: 0 3px 9px #00000066 !important;
 }
 
 .alert {
