@@ -70,6 +70,8 @@
 			{"type":"text","source":"package>version"}
 		,"#packageShortDesc" : 
 			{"type":"text","source":"package>descriptionlist>description"}
+		,"#packageLongDesc" : 
+			{"type":"text","source":"package>descriptionlist>longdescription"}
 		,"#compatibilityCheck" :
 			{"type":"custom"
 				,"source":"package>compatibility>firmware"
@@ -173,7 +175,10 @@
 	<div class="container">
 		<ul id="headerImage"></ul>
 	</div>
-
+	
+	<div class="container">
+		<p id="packageLongDesc"></p>
+	</div> 
 
 </div>
 <div id="packageError" style="display:none">
