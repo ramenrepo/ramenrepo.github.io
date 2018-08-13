@@ -1,0 +1,29 @@
+<package>
+    <id>com.ramenrepo.limelightTest</id>
+    <name>Limelight</name>
+    <version>1.0</version>
+    <compatibility>
+        <firmware>
+            <miniOS>9.0</miniOS>
+            <maxiOS>12.0</maxiOS>
+            <otherVersions>unconfirmed</otherVersions>
+        </firmware>
+    </compatibility>
+    <dependencies>Anemone</dependencies>
+    <descriptionlist>
+        <description>Colorful glyphs for anemone</description>
+        <longdescription><![CDATA[
+            · I'm attempting to fix the subprocess error.
+            · This package is experimental and only intended for testing on iOS != 11.x
+        ]]></longdescription>
+    </descriptionlist>
+    <screenshots>
+        <screenshot>
+            <image>limelight-sample.png</image>
+        </screenshot>
+    </screenshots>
+    <changelog>
+        <change>Initial release</change>
+    </changelog>
+    <links></links>
+</package>
