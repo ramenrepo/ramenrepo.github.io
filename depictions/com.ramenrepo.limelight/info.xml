@@ -1,11 +1,11 @@
 <package>
     <id>com.ramenrepo.limelight</id>
     <name>Limelight</name>
-    <version>1.4</version>
+    <version>1.5</version>
     <compatibility>
         <firmware>
             <miniOS>7.0</miniOS>
-            <maxiOS>12.0</maxiOS>
+            <maxiOS>13.0</maxiOS>
             <otherVersions>unconfirmed</otherVersions>
         </firmware>
     </compatibility>
@@ -13,7 +13,7 @@
     <descriptionlist>
         <description>Colorful glyphs for anemone</description>
         <longdescription><![CDATA[
-            · 280+ icons<br/>
+            · 400 icons<br/>
             · Includes regular + glowing theme<br/>
             · Small + large badges<br/>
             · I recommend using a darker wallpaper<br/>
