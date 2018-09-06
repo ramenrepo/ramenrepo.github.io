@@ -1,7 +1,7 @@
 <package>
     <id>com.ramenrepo.limelight</id>
     <name>Limelight</name>
-    <version>1.6</version>
+    <version>1.7</version>
     <compatibility>
         <firmware>
             <miniOS>7.0</miniOS>
@@ -13,13 +13,13 @@
     <descriptionlist>
         <description>Colorful glyphs for anemone</description>
         <longdescription><![CDATA[
-            · 570 icons<br/>
-            · Regular + glowing theme<br/>
+            · 620 icons<br/>
+            · Regular and white themes<br/>
             · Small + large badges<br/>
             · Settings Icons<br/>
             · I recommend using a darker wallpaper<br/>
             · Respring to fix the clock + badges<br/>
-            · Leave a tip if you enjoy it 😸<br/>
+            · Leave a tip if you'd like: <a href="paypal.me/tyios">paypal.me/tyios</a> :)<br/>
         ]]></longdescription>
     </descriptionlist>
     <screenshots>
